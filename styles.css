@@ -10,7 +10,6 @@ header{
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 89px;
   background-color: #D95204;
   color: #ECECEC;
   
@@ -19,11 +18,11 @@ header{
 }
 
 .wrapper{
-  height:90.3vh;
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: #3B4B59;
+  border-radius: 10px;
   
 
 }
