@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&display=swap');
+* {
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+}
+
+header{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 89px;
+  background-color: #D95204;
+  color: #ECECEC;
+  
+  
+  
+}
+
+.wrapper{
+  height:90.3vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #3B4B59;
+  
+
+}
+
+.conteiner {
+  display: flex;
+
+  box-shadow: 2px 2px 40px;
+    
+}
+
+
+.logo{
+    background:  #D95204;
+    width: 607px;
+    height: 594px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.login {
+    width: 368px;
+    height: 594px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    
+}
+
+.login h1 {
+    color: #ECECEC;
+    margin-bottom: 20px;
+    
+}
+
+.style {
+padding: 5px;
+color: #ECECEC;
+}
+
+.style input {
+border-radius: 10px;
+border: none; 
+width: 302px;
+height: 39px;
+}
+
+.centro {
+width: 302px;
+height: 39px;
+border-radius: 10px;
+border: none;
+margin-top: 10px;
+background-color: #F2A766;
+
+}
+
+#blue {
+    color: #00A3FF;
+    margin-top: 5px;
+    width: 400px;
+    text-align: center;
+}
+
