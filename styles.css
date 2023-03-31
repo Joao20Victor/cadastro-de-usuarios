@@ -13,8 +13,6 @@ header{
   background-color: #D95204;
   color: #ECECEC;
   
-  
-  
 }
 
 .wrapper{
@@ -28,10 +26,7 @@ header{
 }
 
 .conteiner {
-  display: flex;
-
-  box-shadow: 2px 2px 40px;
-    
+  display: flex; 
 }
 
 
@@ -72,6 +67,7 @@ border-radius: 10px;
 border: none; 
 width: 302px;
 height: 39px;
+background:white;
 }
 
 .centro {
