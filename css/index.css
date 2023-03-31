@@ -13,8 +13,26 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    box-shadow: 0px 0px 40px #000000;
+    min-height: 85vh;
 }
 
-.elementos-login-interno-1{
+.elementologin{
+    box-shadow: 0px 0px 40px #000000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+}
+
+.elementos-1-login{
+    background-color: #D95204;
+}
+
+.elementos-2-login{
+    display: flex;
+    flex-direction: column;
+    padding-inline: 5vh;
+    gap: 5vh;
+    color: #f9f9f9;
+    
 }
