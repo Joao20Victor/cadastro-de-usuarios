@@ -21,11 +21,12 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    border-radius: 10px;
+    border-radius: 30px;
 }
 
 .elementos-1-login{
     background-color: #D95204;
+    border-radius: 30px;
 }
 
 .elementos-2-login{
@@ -35,4 +36,7 @@ body{
     gap: 5vh;
     color: #f9f9f9;
     
+}
+
+.img {
 }

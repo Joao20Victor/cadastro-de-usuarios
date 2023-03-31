@@ -64,17 +64,6 @@ body {
     padding-inline: 3vh;
 }
 
-body {
-    background-color: #3B4B59;
-}
-
-.iii {
-    background: #D95204;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    
-    width: 10vh;
-    height: 10vh;
-
+.button-cheio {
+    background-color: ;
 }
