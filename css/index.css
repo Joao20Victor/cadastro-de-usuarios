@@ -1,0 +1,20 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #3B4B59;
+}
+
+.conteiner-login{
+    background-color: #3B4B59;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 0px 40px #000000;
+}
+
+.elementos-login-interno-1{
+}
