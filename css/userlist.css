@@ -1,0 +1,17 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #3B4B59;
+}
+
+.conteiner-userlist{
+    background-color: aliceblue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 85vh;
+}
