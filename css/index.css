@@ -38,5 +38,15 @@ body{
     
 }
 
-.img {
+.input{
+    border-radius: 10px;
+    padding: 10px;
+    border: none;
+}
+
+.boatao-login{
+    background-color: #F2A766;
+    border-radius: 10px;
+    padding: 10px;
+    border: none;
 }
