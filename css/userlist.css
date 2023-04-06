@@ -2,13 +2,73 @@ body {
     background-color: #3B4B59;
 }
 
-.iii {
-    background: #D95204;
+.container-userlist{
     display: flex;
-    align-items: center;
     justify-content: center;
-    
-    width: 10vh;
-    height: 10vh;
+    min-height: 100vh;
+}
 
+.itens{
+    margin-top: 20vh;
+    margin-bottom: 20vh;
+    box-shadow: 0px 0px 40px #000000;
+    border-radius: 10px;
+}
+
+.elemento-usuario{
+    display: flex;
+    justify-content: space-between;
+    min-width: 100vh;
+    background-color: #D95204;
+    margin: 5vh;
+    padding: 2vh;
+    border-radius: 10px;
+    color: white;
+}
+
+
+.elemento-usuario-esquerda{
+   display: flex;
+   flex-direction: column; 
+}
+
+.elemento-usuario-direita{
+    display: flex;
+}
+
+.btn1{
+    border: none;
+    background: transparent;
+}
+.btn1 i{
+    color: white;
+    font-size: 20px;
+    margin: 5px;
+}
+
+.btn2 {
+    border: none;
+    background: transparent;
+}
+
+.btn2 i{
+    color: white;
+    font-size: 20px;
+    margin: 5px;
+}
+
+.butão-adicionar{
+    height: 40px;
+    padding: 10px;
+    border: solid 2px #D95204;
+    background: none;
+    border-radius: 5px;
+    color: #D95204;
+    margin-bottom: 20px;
+}
+
+.buttons-userlist {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
 }
