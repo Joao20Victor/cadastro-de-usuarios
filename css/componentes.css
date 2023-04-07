@@ -17,7 +17,6 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-around;
-    min-width: 100vh;
 }
 
 .logo-header {
@@ -38,7 +37,6 @@ body {
     display: none;
     position: absolute;
     background-color: #f9f9f9;
-    min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     padding: 12px 16px;
     z-index: 1;
@@ -65,4 +63,8 @@ body {
 }
 
 .button-cheio {
+}
+
+.popup1{
+    background-color: #3B4B59;
 }
