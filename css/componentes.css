@@ -62,9 +62,21 @@ body {
     padding-inline: 3vh;
 }
 
+.popups{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    
+}
+   
+
 .button-cheio {
 }
 
 .popup1{
     background-color: #3B4B59;
-}
+ }
+
+
+
