@@ -67,16 +67,22 @@ body {
     align-items: center;
     justify-content: center;
     min-height: 100vh;
-    
+    background-color: #1E1E1E;
+  
 }
    
-
 .button-cheio {
 }
 
-.popup1{
+.popup{
     background-color: #3B4B59;
+    min-height:10vh;
+    color: #fff;    
+
  }
 
-
-
+ .elementos1{
+    display: flex;
+    flex-direction: column;
+    align-items: center ;
+ }
