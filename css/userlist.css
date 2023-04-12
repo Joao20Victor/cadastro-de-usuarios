@@ -16,14 +16,22 @@ body {
 }
 
 .elemento-usuario{
-    display: flex;
-    justify-content: space-between;
     min-width: 100vh;
     background-color: #D95204;
     margin: 5vh;
     padding: 2vh;
     border-radius: 10px;
     color: white;
+}
+.elemento-desat{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    min-width: 100vh;
+    background-color: #D95204;
+    border-radius: 10px;
+    color: white;
+    margin-bottom: 20px;
 }
 
 
