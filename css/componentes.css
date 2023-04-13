@@ -102,6 +102,7 @@ body {
     border-radius: 10px;
     width: 50vh;
     background-color: #D1D1D1;
+    outline: none;
 
  }
 
@@ -109,12 +110,6 @@ body {
     width: 22vh;
  }
 
- .input-pequeno::placeholder{
-    color: black;
-    font-weight: 900;
- }
-
- 
 .botoes-popups{
     display: flex;
     justify-content: center;
@@ -143,5 +138,14 @@ button{
 
 h1{
     font-size: 25px;
+}
+
+.opcoes{
+    background-color:#D1D1D1;
+    outline: none;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    color: rgba(0, 0, 0, 0.514)  ;
 }
 
