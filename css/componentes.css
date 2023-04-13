@@ -126,21 +126,25 @@ body {
     gap: 5vh;
 }
 
-button{
+
+ 
+.botao-sair{
+    background-color: #FF0000;
+    color:#FFFFFF;
     padding: 10px;
     border: none;
     width: 18vh;
     border-radius:10px;
 }
- 
-.botao-sair{
-    background-color: #FF0000;
-    color:#FFFFFF;
-}
 
 .botao-pronto{
     background-color: #F2A766;
     color: #FFFFFF;
+    padding: 10px;
+    border: none;
+    width: 20vh;
+    margin: 2vh;
+    border-radius:10px;
 }
 
 h1{
