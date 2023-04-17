@@ -7,9 +7,41 @@
     <link rel="stylesheet" href="/css/componentes.css">
     <link rel="stylesheet" href="/css/userlist.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css">
+    <script src="/js/userlist.js"></script>
     <title>userlist</title>
 </head>
 <body>
+    <div id="pop" class="popups">    
+        <div class="popup">
+            <div class="elementos1">
+                <h1>Cadastrar novo Usuário</h1>
+                <div class="caixas column"> 
+                    <div class="caixa-nome">
+                        <input type="text" class="inputName" placeholder="Nome:"> 
+                    </div>
+                    <div class="caixa-Email">
+                        <input type="text" class="inputEmail" placeholder="Email:">
+                    </div>
+                    <div class="caixa-Senha">
+                        <input type="text" class="inputPassword" placeholder="Senha:">
+                    </div>
+                </div>
+                <div class="caixas row">
+                    <div class="caixa-Idade">
+                        <input class="input-pequeno" type="number" placeholder="Idade:">
+                    </div>
+                    <div class="caixa-Cargo">
+                        <select class="opcoes"name="" id="">
+                            <option  value="">Administrador</option>
+                            <option value="">Gerente</option>
+                        </select>
+                    </div>
+                    <button onclick="addUsers()"> add</button>
+                </div>
+            </div>
+        </div>
+    </div> 
+
     <div class="header">
         <div class="elementos-header">
             <h1 class="logo-header">B.A.L.A</h1>
@@ -48,9 +80,12 @@
                 </div>
             </div>
             <div class="buttons-userlist">
-                <button class="butão-adicionar">+ Novo Usuario</button>
+                <button onclick="openModal()" class="butão-adicionar">+ Novo Usuario</button>
             </div>
         </div>
         </div>
+
+
+           
 </body>
 </html>

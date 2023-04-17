@@ -5,27 +5,57 @@ let users = [{
     age: 21,
     id: 1
 }]
-const permission = [{
-    id: 1,
-    name: "abrir empresa"
-}]
-const alcada = [{
-    id: 1,
-    name: "naosei",
-    permission: []
-}]
+
 
 function addUsers(){
     const name = document.querySelector(".inputName").value
-    const age = document.querySelector(".inputAge").value
+    const age = document.querySelector(".input-pequeno").value
     const email = document.querySelector(".inputEmail").value
     const password = document.querySelector(".inputPassword").value
     users.push({name: name, email: email, password: password, age: age})
     closeModal()
     renderUsers()
 }
+
+function openModal() {
+    const modal = document.getElementById("pop")
+    modal.style.display = "flex";
+  
+} 
+
+function closeModal() {
+    const modal = document.getElementById("pop")
+    modal.style.display = "none";
+}
+
+window.onclick = function(event) {
+    const modal = document.getElementById("pop")
+  if (event.target == modal) {
+    closeModal();
+  }
+}
+
+
+
+
+
+
+
+
+
+// const permission = [{
+//     id: 1,
+//     name: "abrir empresa"
+// }]
+// const alcada = [{
+//     id: 1,
+//     name: "naosei",
+//     permission: []
+// }]
+
+
 function renderUsers(){
-    const render_Users = document.querySelector(".renderUsers")
+    const render_Users = document.querySelector(".container-userlist")
     render_Users.innerHTML = null
     
     users.forEach(function(user) {
@@ -44,25 +74,9 @@ function renderUsers(){
         render_Users.appendChild(olhinho)
     })
 }
-renderUsers()
 
 
-const modal = document.getElementById("myModal");
-const btn = document.getElementsByTagName("button")[0];
 
-function openModal() {
-  modal.style.display = "block";
-}
-
-function closeModal() {
-  modal.style.display = "none";
-}
-
-window.onclick = function(event) {
-  if (event.target == modal) {
-    closeModal();
-  }
-}
 
 
 

@@ -63,12 +63,16 @@ body {
 }
 
 .popups{
-    display: flex;
+    display: none;
+    position: fixed;
+    z-index: 99; 
+    overflow: auto;
     align-items: center;
     justify-content: center;
+    width: 100%;
     min-height: 100vh;
-    background-color: #1E1E1E;
-  
+    background: rgba(0, 0, 0, 0.7);
+   
 }
    
 .popup{
