@@ -42,8 +42,8 @@ body {
     z-index: 1;
     background-color: #f9f9f9;
     border-radius: 5px;
-    
   }
+
   .botão1-dropdown:hover .conteudo-dropdown {
     display: block;
   }
@@ -72,7 +72,7 @@ body {
     width: 100%;
     min-height: 100vh;
     background: rgba(0, 0, 0, 0.7);
-   
+    background-color: #1E1E1E;
 }
    
 .popup{
@@ -81,75 +81,79 @@ body {
     color: #fff;    
     border-radius: 15px;
     padding: 4vh 0vh;
-
  }
 
  .elementos1{
     display: flex;
     flex-direction: column;
-    align-items: center ;
-    gap: 2vh;
+    align-items: center;
+    gap: 4vh;
  }
-
+ 
  .caixas{
     display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     gap: 5vh;
-    
- }
+    flex-direction: row;
+    }
+
  .column{
     flex-direction: column;
- }
+}
 
  input{
     padding: 10px;
     border: none;
     border-radius: 10px;
-    width: 50vh;
     background-color: #D1D1D1;
     outline: none;
-
+    width: 40vh;
  }
 
- .input-pequeno{
-    width: 22vh;
+ .menor{
+    width: 19vh;
+ }
+
+ .opcoes{
+     background-color:#D1D1D1;
+     outline: none;
+     padding: 10px 2px;
+     border: none;
+     border-radius: 10px;
+     color: rgba(0, 0, 0, 0.514);
+    
+
  }
 
 .botoes-popups{
     display: flex;
-    justify-content: center;
-    align-items: center;
     gap: 5vh;
-
 }
 
-button{
+
+ 
+.botao-sair{
+    background-color: #FF0000;
+    color:#FFFFFF;
+    padding: 10px;
+    border: none;
+    width: 18vh;
+    border-radius:10px;
+}
+
+.botao-pronto{
+    background-color: #F2A766;
+    color: #FFFFFF;
     padding: 10px;
     border: none;
     width: 20vh;
     margin: 2vh;
     border-radius:10px;
 }
- 
-.botao-sair{
-    background-color: #FF0000;
-    color:#FFFFFF;
-}
-
-.botao-pronto{
-    background-color: #F2A766;
-    color: #FFFFFF;
-}
 
 h1{
     font-size: 25px;
 }
 
-.opcoes{
-    background-color:#D1D1D1;
-    outline: none;
-    padding: 10px;
-    border: none;
-    border-radius: 10px;
-    color: rgba(0, 0, 0, 0.514)  ;
-}
 
