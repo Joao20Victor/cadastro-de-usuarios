@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="/css/componentes.css">
   <link rel="stylesheet" href="/css/index.css">
+  <script src="/js/login.js"></script>
   <title>Document</title>
 </head>
 <body>
@@ -24,13 +25,13 @@
         <h1>Login</h1>
         <div class="elementos-login-interno-1">
             <p>Email</p>
-            <input class="input" type="email">
+            <input id="input-email" class="input" type="email">
         </div>
         <div class="elementos-login-interno-2">
             <p>Senha</p>
-            <input class="input" type="password">
+            <input id="input-password" class="input" type="password">
         </div>
-        <button class="boatao-login" type="submit">Entrar</button>
+        <button class="boatao-login" type="submit" onclick="validateLogin()">Entrar</button>
     </div>
     </div>
   </div>
