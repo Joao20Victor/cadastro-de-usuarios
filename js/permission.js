@@ -1,0 +1,1 @@
+let permission = JSON.parse(localStorage.getItem("permission")) || []

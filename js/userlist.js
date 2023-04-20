@@ -1,6 +1,6 @@
 let users = JSON.parse(localStorage.getItem("users")) || []
 let alcada = JSON.parse(localStorage.getItem("alcada")) || []
-let permission = JSON.parse(localStorage.getItem("permission")) || []
+
 
 // Funções para o modal
 function openModal() {
@@ -23,7 +23,6 @@ window.onclick = function(event) {
 
 // Função de iniciar
 function start(){
-    SetItem()
     renderUsers()
 }
 
@@ -35,12 +34,16 @@ function SetItem(){
 }
 
 function addUsers(){
-    const name = document.querySelector(".inputName").value
-    const age = document.querySelector(".input-pequeno").value
-    const email = document.querySelector(".inputEmail").value
-    const password = document.querySelector(".inputPassword").value
+    const name = document.querySelector(".inputName")
+    const age = document.querySelector(".input-pequeno")
+    const email = document.querySelector(".inputEmail")
+    const password = document.querySelector(".inputPassword")
     const id = users.length
-    users.push({name: name, age: age, email: email, password:password, id: id})
+    users.push({name: name.value, age: age.value, email: email.value, password:password.value, id: id})
+    name.value = ""
+    age.value = ""
+    email.value = ""
+    password.value = ""
     closeModal()
     SetItem()
     renderUsers()

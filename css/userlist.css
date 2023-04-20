@@ -66,19 +66,17 @@ body {
 }
 
 .butão-adicionar{
+    cursor: pointer;
     height: 40px;
     padding: 10px;
-    border: solid 2px #D95204;
+    border: solid 2px #3B4B59;
     background: none;
     border-radius: 5px;
-    color: #D95204;
+    color: #3B4B59;
     margin-bottom: 20px;
 }
 
 .buttons-userlist {
-    cursor: pointer;
-    color: #3B4B59;
-    background-color: #3B4B59;
     display: flex;
     justify-content: center;
     align-items: flex-end;
