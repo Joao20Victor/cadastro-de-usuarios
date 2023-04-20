@@ -76,6 +76,9 @@ body {
 }
 
 .buttons-userlist {
+    cursor: pointer;
+    color: #3B4B59;
+    background-color: #3B4B59;
     display: flex;
     justify-content: center;
     align-items: flex-end;

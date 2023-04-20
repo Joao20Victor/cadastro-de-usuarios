@@ -1,26 +1,11 @@
-let users = [{
-    name: "gerente",
-    email: "gerente@gmail.com",
-    password: 123,
-    age: 21,
-    id: 1
-}]
+let users = JSON.parse(localStorage.getItem("users")) || []
+let alcada = JSON.parse(localStorage.getItem("alcada")) || []
+let permission = JSON.parse(localStorage.getItem("permission")) || []
 
-
-function addUsers(){
-    const name = document.querySelector(".inputName").value
-    const age = document.querySelector(".input-pequeno").value
-    const email = document.querySelector(".inputEmail").value
-    const password = document.querySelector(".inputPassword").value
-    users.push({name: name, email: email, password: password, age: age})
-    closeModal()
-    renderUsers()
-}
-
+// Funções para o modal
 function openModal() {
     const modal = document.getElementById("pop")
     modal.style.display = "flex";
-  
 } 
 
 function closeModal() {
@@ -34,100 +19,71 @@ window.onclick = function(event) {
     closeModal();
   }
 }
+///////////////////////
 
+// Função de iniciar
+function start(){
+    SetItem()
+    renderUsers()
+}
 
+start()
+///////////////////////
 
+function SetItem(){
+    localStorage.setItem("users", JSON.stringify(users))
+}
 
-
-
-
-
-
-// const permission = [{
-//     id: 1,
-//     name: "abrir empresa"
-// }]
-// const alcada = [{
-//     id: 1,
-//     name: "naosei",
-//     permission: []
-// }]
-
+function addUsers(){
+    const name = document.querySelector(".inputName").value
+    const age = document.querySelector(".input-pequeno").value
+    const email = document.querySelector(".inputEmail").value
+    const password = document.querySelector(".inputPassword").value
+    const id = users.length
+    users.push({name: name, age: age, email: email, password:password, id: id})
+    closeModal()
+    SetItem()
+    renderUsers()
+}
 
 function renderUsers(){
-    const render_Users = document.querySelector(".container-userlist")
-    render_Users.innerHTML = null
+    document.addEventListener("DOMContentLoaded", function() {
+        const render_Users = document.querySelector(".itens")
+        render_Users.innerHTML = null
+        
+        users.forEach(function(user) {
+            const UsersElements = document.createElement("div")
+            UsersElements.classList.add("elemento-usuario")
+            
+            const nameUser = document.createElement("h1")
+            nameUser.classList.add("tittle-users")
+            nameUser.innerText = user.name
+            UsersElements.appendChild(nameUser)
     
-    users.forEach(function(user) {
-        const nameUser = document.createElement("h1")
-        nameUser.classList.add("tittle-users")
-        nameUser.innerText = user.name
-        render_Users.appendChild(nameUser)
-
-        const ageUser = document.createElement("p")
-        ageUser.classList.add("age-users")
-        ageUser.innerText = user.age
-        render_Users.appendChild(ageUser)
-
-        const olhinho = document.createElement("i")
-        olhinho.classList.add("fa-regular", "fa-eye")
-        render_Users.appendChild(olhinho)
+            const ageUser = document.createElement("p")
+            ageUser.classList.add("age-users")
+            ageUser.innerText = user.age
+            UsersElements.appendChild(ageUser)
+    
+            const viewUsers = document.createElement("i")
+            viewUsers.classList.add("fa-regular", "fa-eye")
+            UsersElements.appendChild(viewUsers)
+    
+            const EditUsers = document.createElement("i")
+            EditUsers.classList.add("fa-solid", "fa-pen")
+            UsersElements.appendChild(EditUsers)
+    
+            // const ExcluirUsers = document.createElement("i")
+            // ExcluirUsers.classList.add("fa-regular", "fa-user-xmark")
+            // UsersElements.appendChild(ExcluirUsers)
+            // ExcluirUsers.addEventListener("click", function(){
+            //     localStorage.removeItem()
+            // })
+    
+            render_Users.appendChild(UsersElements)
+        })
     })
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// function iniciarr(){
-//     if(!users){
-//         localStorage.setItem("users", JSON.stringify(users))
-//     }
-    
-// }
-
-// function saveLocal(usuario){
-//     const Users = JSON.parse(localStorage.getItem("users"))
-//     localStorage.setItem("usuarios", JSON.stringify(
-//         ...Users,
-//         users.concat(usuario)
-//     ))
-// }
-
+renderUsers()
 
