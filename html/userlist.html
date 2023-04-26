@@ -37,11 +37,60 @@
                     </div>
                     <button onclick="addUsers()"> add</button>
                 </div>
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/componentes.css" />
+    <link rel="stylesheet" href="/css/userlist.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css"
+    />
+    <script src="/js/userlist.js"></script>
+    <title>userlist</title>
+  </head>
+  <body>
+    <div id="pop" class="popups">
+      <div class="popup">
+        <div class="elementos1">
+          <h1>Cadastrar novo Usuário</h1>
+          <div class="caixas column">
+            <div class="caixa-nome">
+              <input type="text" class="inputName" placeholder="Nome:" />
+
             </div>
+            <div class="caixa-Email">
+              <input type="text" class="inputEmail" placeholder="Email:" />
+            </div>
+            <div class="caixa-Senha">
+              <input
+                type="password"
+                class="inputPassword"
+                placeholder="Senha:"
+              />
+            </div>
+          </div>
+
+          <div class="caixas">
+            <input class="menor" type="number" placeholder="Idade:" />
+
+            <select class="opcoes" name="" id="">
+              <option value="">Administrador</option>
+              <option value="">Gerente</option>
+            </select>
+          </div>
+
+          <div class="div-botao">
+            <button id="orange" onclick="addUsers()">Adicionar</button>
+          </div>
         </div>
-    </div> 
+      </div>
+    </div>
 
     <div class="header">
+
         <div class="elementos-header">
             <h1 class="logo-header">B.A.L.A</h1>
             <div class="botoes-header">
@@ -53,8 +102,18 @@
                     </div>
                       
                 </div>
-                
+      <div class="elementos-header">
+        <h1 class="logo-header">B.A.L.A</h1>
+        <div class="botoes-header">
+          <div class="botão1-dropdown">
+            <span>Cadastrar / Editar</span>
+            <div class="conteudo-dropdown">
+              <p>cargos</p>
+              <p>Permissões</p>
             </div>
+          </div>
+
+          <button><i class="fa-sharp fa-solid fa-arrow-down"></i>Sair</button>
         </div>
     </div>
     <div class="container-userlist"> 
@@ -70,4 +129,13 @@
     </div>
     
 </body>
+</html>
+      </div>
+    </div>
+
+    <div class="container-userlist">
+        <button onclick="openModal()" class="butão-adicionar">+ Novo Usuario</button>
+      </div>
+    </div>
+  </body>
 </html>

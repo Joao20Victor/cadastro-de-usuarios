@@ -1,3 +1,4 @@
+
 let users = JSON.parse(localStorage.getItem("users")) 
 const alcadas = JSON.parse(localStorage.getItem("alcada"))
 console.log(alcadas);
@@ -59,7 +60,7 @@ function selectAlcada(id) {
 function selectPermissions(ids) {
     return permissions.filter((i) => ids.includes(i.id))
 }
-function renderUsers(){
+function renderUsers(alcadas){
         const render_Users = document.querySelector(".itens")
         render_Users.innerHTML = null
         users.forEach(function(user) {
