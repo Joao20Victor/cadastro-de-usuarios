@@ -50,8 +50,9 @@ body {
 
 .botão1-dropdown {
     background-color: #f9f9f9;
-    padding: 5px;
+    padding: 10px;
     border-radius: 5px;
+    cursor: pointer;
 }
 
 .button-sair {
@@ -88,17 +89,37 @@ body {
     flex-direction: column;
     align-items: center;
     gap: 4vh;
+    padding: 20px;
+    min-height: 80%;
  }
  
  .caixas{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    display: flex;  
     gap: 5vh;
-    flex-direction: row;
-    }
+}
 
- .column{
+.div-botao {
+    width: 85%;
+    display: flex;
+    
+}
+
+#orange {
+    background-color: #F2A766;
+    cursor: pointer;
+    
+}
+
+.div-botao button {
+    min-width: 80px;
+    height: 40px;
+    padding: 5px 10px;
+    border-radius: 10px;
+    border: none;
+
+}
+
+.column{
     flex-direction: column;
 }
 
@@ -108,7 +129,8 @@ body {
     border-radius: 10px;
     background-color: #D1D1D1;
     outline: none;
-    width: 40vh;
+    width: 42vh;
+    cursor: pointer;
  }
 
  .menor{
@@ -131,17 +153,6 @@ body {
     gap: 5vh;
 }
 
-
- 
-.botao-sair{
-    background-color: #FF0000;
-    color:#FFFFFF;
-    padding: 10px;
-    border: none;
-    width: 18vh;
-    border-radius:10px;
-}
-
 .botao-pronto{
     background-color: #F2A766;
     color: #FFFFFF;
@@ -154,6 +165,8 @@ body {
 
 h1{
     font-size: 25px;
+    color:  #F2A766;
 }
+
 
 

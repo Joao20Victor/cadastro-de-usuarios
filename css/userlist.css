@@ -5,7 +5,12 @@ body {
 .container-userlist{
     display: flex;
     justify-content: center;
+
     margin-top: 3vh;
+
+    align-items: center;
+    min-height: 100vh;
+
 }
 
 
@@ -67,6 +72,10 @@ body {
     background: none;
     border-radius: 5px;
     color: #D95204;
+    border: solid 2px #d8e7f5;
+    background: none;
+    border-radius: 5px;
+    color: #f34500;
     margin-bottom: 20px;
 }
 
@@ -75,7 +84,6 @@ body {
     justify-content: center;
     align-items: flex-end;
 }
-
 .user-permission{
     display: none;
     min-width: 100vh;
@@ -116,3 +124,10 @@ body {
     height: 0;
     width: 0;
   }
+button {
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+   cursor: pointer;
+}
+
