@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        main {
+            width: 300px;
+            margin: 0 auto;
+            
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+
+            background-color: #c4c4c4;
+            border-radius: 5px;
+        }
+
+        main form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        input[type="text"] {
+            width: 180px;
+            height: 24px;
+            border-radius: 5px;
+            margin-bottom: 10px;
+            padding: 5px;
+            border: none;
+            box-shadow: 2px 2px 4px #e9c7c7;
+        }
+
+        button {
+            background-color: rgb(199, 81, 13);
+            width: 90px;
+            height: 32px;
+            border-radius: 5px;
+            margin-bottom: 10px;
+            padding: 5px;
+            border: none;
+        }
+
+        .form-horizontal input[type="text"] {
+            width: 82px;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Novo usuário</h1>
+
+        <form>
+            <input type="text" placeholder="Nome">
+            <input type="text" placeholder="Email">
+            <input type="text" placeholder="Senha">
+
+            <div class="form-horizontal">
+                <input type="text" placeholder="Idade">
+                <input type="text" placeholder="Membro">
+            </div>
+
+            <div class="form-horizontal" style="margin-top: 20px;">
+                <button>Salvar</button>
+                <button>Cancelar</button>
+            </div>
+        </form>
+    </main>
+</body>
+</html>
