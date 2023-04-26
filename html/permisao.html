@@ -4,15 +4,30 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=
-    , initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/permisao.css">
     <link rel="stylesheet" href="/css/componentes.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css">
+    <script src="/js/permission.js"></script>
     <title>Document</title>
 </head>
 
 <body>
+    <div id="pop" class="popups">    
+        <div class="popup">
+            <div class="elementos1">
+                <h1>Cadastrar nova permisão</h1>
+                <div class="caixas column"> 
+                    <div class="caixa-nome">
+                        <input type="text" class="inputName" placeholder="nome:"> 
+                    </div>
+                </div>
+                <div class="caixas row">
+                    <button onclick="addPermission()">Adicionar</button>
+                </div>
+            </div>
+        </div>
+    </div> 
     <div class="header">
         <div class="elementos-header">
             <h1 class="logo-header">B.A.L.A</h1>
@@ -20,8 +35,8 @@
                 <div class="botão1-dropdown">
                     <span>Cadastrar / Editar</span>
                     <div class="conteudo-dropdown">
-                        <p>Cargo</p>
-                        <p>Permissão</p>
+                        <p><a href="/html/cargos.html">Cargos</a></p>
+                        <p><a href="/html/userlist.html">Usuários</a></p>
                     </div>
                 </div>
                 <button class="button-sair">Sair</button>
@@ -60,8 +75,7 @@
             </div>
 
             <div class="botoes-permisoes">
-                <button class="botao-voltar-permisoes">voltar</button>
-                <button class="botao-nova-permisoes">+ Nova Permissão</button>
+                <button onclick="openModal()" class="botao-nova-permisoes">+ Nova Permissão</button>
             </div>
 
         </div>

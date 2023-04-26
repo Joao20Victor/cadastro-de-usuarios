@@ -5,15 +5,9 @@ body {
 .container-userlist{
     display: flex;
     justify-content: center;
-    min-height: 100vh;
+    margin-top: 3vh;
 }
 
-.itens{
-    margin-top: 20vh;
-    margin-bottom: 20vh;
-    box-shadow: 0px 0px 40px #000000;
-    border-radius: 10px;
-}
 
 .elemento-usuario{
     min-width: 100vh;
@@ -69,10 +63,10 @@ body {
     cursor: pointer;
     height: 40px;
     padding: 10px;
-    border: solid 2px #3B4B59;
+    border: solid 2px #D95204;
     background: none;
     border-radius: 5px;
-    color: #3B4B59;
+    color: #D95204;
     margin-bottom: 20px;
 }
 
@@ -81,3 +75,44 @@ body {
     justify-content: center;
     align-items: flex-end;
 }
+
+.user-permission{
+    display: none;
+    min-width: 100vh;
+    background-color: #D95204;
+    margin: 5vh;
+    padding: 2vh;
+    color: white;
+}
+.botoes-permisoes{
+    display: flex;
+    justify-content: center;
+
+}
+.algo{
+    box-shadow: 0px 0px 40px #000000;
+    border-radius: 10px;
+    height: fit-content;
+}
+.itens{
+    max-height: 75vh;
+    overflow: scroll;
+
+}
+::-webkit-scrollbar{
+    background-color: rgba(2, 10, 38, 0);
+    width: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+  }
+  
+  ::-webkit-scrollbar-thumb{
+    background-color: #D95204;
+    border-radius: 5px;
+  }
+  
+  ::-webkit-scrollbar-corner{
+    background-color: rgba(255, 249, 249, 0);
+    height: 0;
+    width: 0;
+  }

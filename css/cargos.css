@@ -1,0 +1,88 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #3B4B59;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container-cargos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    box-shadow: 0px 0px 40px #000000;
+
+    width: 100%;
+    max-width: 960px;
+    padding: 10px;
+    border-radius: 10px;
+}
+.cargos-ativados {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.cargos{
+    background-color: #D95204;
+    margin: 5vh;
+    padding: 2vh;
+    border-radius: 10px;
+    color: white;
+}
+.botoes-permisoes{
+    cursor: pointer;
+    height: 40px;
+    padding: 10px;
+    border: solid 2px #D95204;
+    background: none;
+    border-radius: 5px;
+    color: #D95204;
+    margin-bottom: 20px;
+}
+.botao-nova-permisoes{
+    background: transparent;
+    border: none;
+    color: #D95204;
+    cursor: pointer;
+}
+.popup2{
+    width: 33%;
+    max-height: 25vh; 
+    background-color: #D95204; 
+    display: flex; 
+    flex-wrap: wrap; 
+    justify-content: flex-start;
+}
+.popups2{
+    position: fixed; 
+    z-index: 99;
+    background-color: rgba(0, 0, 0, 0.5); 
+    display: none; 
+    justify-content: center; 
+    place-items: center; 
+    width: 100%; 
+    height: 100vh;
+}
+.renderPermission{
+    background-color: #D95204;
+    padding: 5px;
+    border-radius: 2px;
+    margin-bottom: 4px;
+}
+.caixa-Email{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2%;
+}

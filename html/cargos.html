@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="/css/componentes.css">
+    <link rel="stylesheet" href="/css/cargos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css">
+
+    <script src="/js/cargos.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div id= "pop2" class="popups2"> 
+        <div class="popup2">
+
+        </div>
+    </div>
+    
+    <div id="pop" class="popups">
+        <div class="popup">
+            <div class="elementos1">
+                <h1>Cadastrar Novo Cargo</h1>
+
+                <div class="caixas column">
+                    <div class="caixa-nome">
+                        <input class="inputalcada" type="text" placeholder="Nome:">
+                    </div>
+                    <div class="caixa-Email">
+                        
+                    </div>
+                </div>
+
+                <div class="botoes-popups"> 
+                    <button onclick="addAlcada()" class="botao-pronto">Pronto</button>
+               </div>
+            </div>
+        </div>
+    </div>
+    <div class="header">
+        <div class="elementos-header">
+            <h1 class="logo-header">B.A.L.A</h1>
+            <div class="botoes-header">
+                <div class="botão1-dropdown">
+                    <span>Cadastrar / Editar</span>
+                    <div class="conteudo-dropdown">
+                        <p><a href="/html/userlist.html">Usuários</a></p>
+                        <p><a href="/html/permisao.html">Permissão</a></p>
+                    </div>
+                </div>
+                <button class="button-sair">Sair</button>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="container-cargos">
+            <div class="cargos-ativados">
+                <div class="Cargos">
+                    
+                </div>
+            </div>
+            <div class="botoes-permisoes">
+                <button onclick="openModal()" class="botao-nova-permisoes">+ Nova Permissão</button>
+            </div>
+
+        </div>
+    </div>
+</body>
+</html>

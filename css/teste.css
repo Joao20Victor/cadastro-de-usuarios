@@ -1,8 +1,0 @@
-.modal {
-    display: none; /* esconde o modal por padrão */
-    position: fixed; /* posicionamento fixo para sobrepor a página */
-    z-index: 1; /* coloca o modal em cima de tudo */
-    overflow: auto; /* habilita a rolagem quando o modal estiver aberto */
-    background-color: rgba(0,0,0,0.4); /* adiciona um fundo escuro transparente */
-  }
-  
