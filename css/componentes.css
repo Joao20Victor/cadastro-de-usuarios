@@ -50,8 +50,9 @@ body {
 
 .botão1-dropdown {
     background-color: #f9f9f9;
-    padding: 5px;
+    padding: 10px;
     border-radius: 5px;
+    cursor: pointer;
 }
 
 .button-sair {
@@ -152,17 +153,6 @@ body {
     gap: 5vh;
 }
 
-
- 
-.botao-sair{
-    background-color: #FF0000;
-    color:#FFFFFF;
-    padding: 10px;
-    border: none;
-    width: 18vh;
-    border-radius:10px;
-}
-
 .botao-pronto{
     background-color: #F2A766;
     color: #FFFFFF;
@@ -177,5 +167,6 @@ h1{
     font-size: 25px;
     color:  #F2A766;
 }
+
 
 
